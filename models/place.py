@@ -38,12 +38,9 @@ class Place(BaseModel, Base):
         number_rooms (sqlalchemy Integer): The number of rooms.
         number_bathrooms (sqlalchemy Integer): The number of bathrooms.
         max_guest (sqlalchemy Integer): The maximum number of guests.
-        price_by_night (sqlalchemy Integer): The price by night.
-        latitude (sqlalchemy Float): The place's latitude.
-        longitude (sqlalchemy Float): The place's longitude.
-        reviews (sqlalchemy relationship): The Place-Review relationship.
-        amenities (sqlalchemy relationship): The Place-Amenity relationship.
-        amenity_ids (list): An id list of all linked amenities.
+        price_by_night (sqlalchemy Integer): The price by night
+        latitude (sqlalchemy Float): The place's latitude
+        longitude (sqlalchemy Float): The place's longitude
     """
     __tablename__ = "places"
     city_id = Column(String(60), ForeignKey("cities.id"), nullable=False)
