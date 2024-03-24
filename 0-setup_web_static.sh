@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # Sets up your web server for deployment of web_static.
+=======
+# Seting up a web server for deployment of web_static.
+>>>>>>> 3b3b1f8804504db7ad5abcfc705c9d37d3c3b6a9
 
 apt-get update
 apt-get install -y nginx
@@ -25,7 +29,11 @@ printf %s "server {
     }
 
     location /redirect_me {
+<<<<<<< HEAD
         return 301 http://celestialuganda.com/;
+=======
+        return 301 http://cuberule.com/;
+>>>>>>> 3b3b1f8804504db7ad5abcfc705c9d37d3c3b6a9
     }
 
     error_page 404 /404.html;
